@@ -9,12 +9,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* 这个容器现在可以同时用于主页面的按钮和支持页面的内容 */
+.content-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.email-link a, .privacy-link a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link a:hover, .privacy-link a:hover {
+  text-decoration: underline;
 }
 
 .button-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 30px;
 }
 
 .download-button {
@@ -26,8 +59,41 @@ body {
   font-size: 18px;
   text-align: center;
   transition: background-color 0.3s;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .download-button:hover {
   background-color: #0056b3;
 }
+
+/* 可以为技术支持按钮添加一些特殊样式，如果需要 */
+.support-button {
+    background-color: #28a745; /* 绿色 */
+}
+
+.support-button:hover {
+    background-color: #218838;
+}
+
+/* 返回按钮（可选） */
+.back-button {
+    background-color: #6c757d; /* 灰色 */
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.privacy-link {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+/* 如果主页面的按钮容器不需要 content-container 的背景效果，可以单独定义 */
+/* .index-page-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
